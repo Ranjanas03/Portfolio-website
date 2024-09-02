@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(-100%);
+}
+#main{
+    width: 100%;
+    background-color: black;
+    cursor: none;
+}
+#hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* z-index: 99999;
+    opacity: 0; */
+}
+#nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+    font-size: 10px;
+    font-family: "General Sans Medium";
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    /* position: fixed; */
+}
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+#nav #nav2{
+    height: 90px;
+    width: 35%;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    background-color: black;
+    font-size: 10px;
+}
+#hero #heading{
+    height: fit-content;
+    width: fit-content;
+    padding-top: 90px;
+}
+#heading h1{
+    font-size: 10.5vw;
+    font-family: "General Sans Medium";
+    line-height: 1;
+    gap: 4px;
+    font-weight: 900;
+    margin-left: 35px;
+    opacity: 0.7;
+    font-weight: 100;
+}
+#heading #secondh1{
+    margin-left: 250px;
+}
+#heading h5{
+    font-size: 1.2vw;
+    font-family: "General Sans";
+    font-weight: 600;
+    margin-top: 0px;
+}  
+.blocktext{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.blocktext h5{
+    text-align: right;
+}
+#chhotiheading{
+    margin-top: 80px;
+    flex-direction: column;
+    display: flex;
+    align-items: end;
+}
+#chhotiheading h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    line-height: 0.5;
+    font-weight: 400;
+    padding: 4px 35px;
+    font-family: "General Sans Medium";
+}  
+#secondhero{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+#nav2{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   width: 100%;
+   padding: 0px 30px;
+   font-size: 3vw;
+   color: white;
+   gap: 8px;
+   border-top: 1px solid #ffffffa9;
+   border-bottom: 1px solid #ffffffa9;
+   white-space: nowrap;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+#nav2 h1{
+    font-family: "General Sans Medium";
+    animation-timing-function: linear;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 100px));
+    }
+}
+#nav2:hover h1{
+    animation-play-state: paused;
+}
+#content{
+    height: 200px;
+    width: 50%;
+    /* background-color: yellow; */
+    margin-left: 500px;
+    margin-top: 100px;
+    font-size: 1.5vw;
+}
+#content h3{
+    font-family: "General sans Regular";
+    color: white;
+    font-weight: 100;
+}
+#thirdhero{
+    padding-left: 35px;
+    width: 100%;
+    height: 150vh;
+    padding-top: 4vw;
+    background-color: black;
+}
+#heading2{
+    height: fit-content;
+    width: fit-content;
+}
+#heading2 h1{
+    font-size: 5vw;
+    font-family: "General Sans Medium";
+    line-height: 1;
+    gap: 4px;
+    font-weight: 900;
+    margin-left: 35px;
+    margin-bottom: 4vw;
+    color: white;
+    /* opacity: 0.7; */
+    font-weight: 100;
+}
+#heading2 span{
+    color: red;
+}
+.elem{
+    position: relative;
+    width: 90%;
+    margin-left: 3vw;
+    border-top: 1px solid #888;
+    padding: 1vw 1vw;
+    color: white;
+    padding-right: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+.elem a{
+    font-size: 4vw;
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+#elemlast{
+    border-bottom: 1px solid #888;
+}
+#contact{
+    position: absolute;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    /* background-color: red; */
+    bottom: -10%;
+}
+#contact a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
